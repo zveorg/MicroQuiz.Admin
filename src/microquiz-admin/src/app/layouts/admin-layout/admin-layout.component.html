@@ -1,0 +1,27 @@
+<app-header [fixed]="true"
+            [navbarBrandFull]="{src: 'assets/img/brand/logo.png', width: 100, alt: 'ParkIP Logo'}"
+            [navbarBrandMinimized]="{src: 'assets/img/brand/logo.png', width: 40, alt: 'ParkIP Logo'}"
+            [sidebarToggler]="'lg'"
+            [asideMenuToggler]="false"
+            [mobileAsideMenuToggler]="false">
+    <ul class="nav navbar-nav ml-auto"></ul>
+</app-header>
+<div class="app-body">
+    <app-sidebar [fixed]="true" [display]="'lg'">
+        <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
+        <app-sidebar-minimizer></app-sidebar-minimizer>
+    </app-sidebar>
+    <!-- Main content -->
+    <main class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <app-breadcrumb></app-breadcrumb>
+        </ol>
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</div>
+<app-footer>
+    <span></span>
+</app-footer>
