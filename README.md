@@ -1,2 +1,2 @@
 # MicroQuiz.Admin
-Admin dashboard for MicroQuiz
+Admin dashboard for [MicroQuiz](https://github.com/zveorg/MicroQuiz)
